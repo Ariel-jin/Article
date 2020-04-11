@@ -31,7 +31,7 @@ X~i~为训练集中的N个IMS样本，X~i~=[x~i,1~,...x~i,14~]，i=1,...N
 
 ==平滑：==
 
-![image-20200310175620593](C:\Users\jinjiao\AppData\Roaming\Typora\typora-user-images\image-20200310175620593.png)
+![image-20200310175620593](https://github.com/Ariel-jin/Article/blob/master/image-20200310175620593.png)
 
 ​	其中*x ij*（*t*）([i=1,2...N, j=1,2...14])为IMS测量值，*w*是滑动MA的窗口长度
 
