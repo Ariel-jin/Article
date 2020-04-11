@@ -37,7 +37,7 @@ X~i~为训练集中的N个IMS样本，X~i~=[x~i,1~,...x~i,14~]，i=1,...N
 
 ==归一化:==
 
-![image-20200310180809741](C:\Users\jinjiao\AppData\Roaming\Typora\typora-user-images\image-20200310180809741.png)
+![image-20200310180809741](https://github.com/Ariel-jin/Article/blob/master/image-20200310180809741.png)
 
   $\bar{x}_{ij}$为归一化值，$\tilde{x}_{ij}$为平滑后的测量值，$u_j$为均值，$\sigma_j$为标准差
 
@@ -62,13 +62,13 @@ IMS数据是14维的，为了增加精确度需要大的N，计算复杂度高�
 
 ​       ① 使用PCA对离线训练集进行变换
 
-​			得到14通道的经验均值![image-20200310212108035](C:\Users\jinjiao\AppData\Roaming\Typora\typora-user-images\image-20200310212108035.png)
+​			得到14通道的经验均值![https://github.com/Ariel-jin/Article/blob/master/image-20200310212108035.png)
 
 ​			和包含主成分系数的14×14矩阵**C**
 
 ​		② 对一个未知新标准化IMS采样样本进行14维的PCA变换
 
-![image-20200310213220389](C:\Users\jinjiao\AppData\Roaming\Typora\typora-user-images\image-20200310213220389.png)
+![image-20200310213220389](https://github.com/Ariel-jin/Article/blob/master/image-20200310213220389.png)
 
 ​				其中$\bar{X}^{us}$为归一化值，$y^(us)$为PCA变换后值。
 
@@ -78,5 +78,5 @@ IMS数据是14维的，为了增加精确度需要大的N，计算复杂度高�
 
 ​				计算新样本$y^(us)$与第$i$个经过PCA转换的训练样本**y** *i*之间的欧几里得距离。
 
-​						![image-20200310214117707](C:\Users\jinjiao\AppData\Roaming\Typora\typora-user-images\image-20200310214117707.png)
+​						![image-20200310214117707](https://github.com/Ariel-jin/Article/blob/master/image-20200310214117707.png)
 
