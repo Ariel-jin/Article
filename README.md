@@ -5,11 +5,11 @@
 
 • K*最近邻居将气味及其化学成分分类。
 
-• 仅使用离子迁移[谱](https://www-sciencedirect-com-443.webvpn.las.ac.cn/topics/engineering/spectrometry)测量[法对](https://www-sciencedirect-com-443.webvpn.las.ac.cn/topics/engineering/spectrometry)气味/化学物质进行分类。
+• 仅使用离子迁移谱测量法对气味/化学物质进行分类。
 
 • 使用k维树搜索的分类大约快8倍。 （降低运算成本和算法复杂度）
 
-•通过[主成分分析](https://www-sciencedirect-com-443.webvpn.las.ac.cn/topics/engineering/principal-component-analysis)，忽略了71–86％的特征进行分类。（① 筛除无关的特征 ② 降低维数）
+•通过主成分分析，忽略了71–86％的特征进行分类。（① 筛除无关的特征 ② 降低维数）
 
 + 算法原理
 
@@ -17,9 +17,9 @@ $$
 d_E(X^{us},X_i)=\sqrt{\sum_{j=1}^{14}{(x_{ij}-x_j^{(us)})^2}}
 $$
 
-X^us^为14维的IMS样本数据，X^us^=[x~1~^(us)^...x~14~^(us)^]
+$X^us$为14维的IMS样本数据，$X^us=[x_1^(us)...x_14^(us)]$
 
-X~i~为训练集中的N个IMS样本，X~i~=[x~i,1~,...x~i,14~]，i=1,...N
+$X~i~$为训练集中的N个IMS样本，$X_i=[x_(i,1),...x-(i,14)]$，i=1,...N
 
 选择与样本X^us^最邻近的K个同类样本作为其标签
 
