@@ -39,7 +39,7 @@ $X_i$为训练集中的N个IMS样本，$X_i=[x_{i,1},...x_{i,14}]$，i=1,...N
 
 ![image-20200310180809741](https://github.com/Ariel-jin/Article/blob/master/image-20200310180809741.png)
 
-  $\bar{x}_{ij}$为归一化值，$\tilde{x}_{ij}$为平滑后的测量值，$u_j$为均值，$\sigma_j$为标准差
+  $\bar{x}^{ij}$为归一化值，$\tilde{x}_{ij}$为平滑后的测量值，$u_j$为均值，$\sigma_j$为标准差
 
 + k-d树
 
